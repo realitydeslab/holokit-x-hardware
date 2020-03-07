@@ -21,6 +21,8 @@
 ### Tooling DFM
 * 
 ## Quality
+### Certification
+* 
 ### CPK Report
 #### EVT-1
 * 
@@ -38,6 +40,8 @@
 * 
 ### Line Quailification
 #### EVT-1
+* 
+### Material Compliance
 * 
 ### PQP
 * 
