@@ -1,0 +1,1 @@
+added _Cosmetic&inspection specification for Holokit Rev C_
