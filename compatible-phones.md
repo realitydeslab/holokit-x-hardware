@@ -9,69 +9,70 @@ Then we will search on the smartphone database [gsmarena.com](https://gsmarena.c
 # Criteria 
 The current HoloKit X was designed for iPhone 11 Pro. 
 
+
 ## Dimensions 
 
 ### Height 
 * **[C1] Height:  > 135mm**
-  - The width of HoloKit X perfectly fits phones with 144mm height (iPhone 11 Pro)
-  - Phone with too small height may not cover full FOV. 
-  - Required.
+- The width of HoloKit X perfectly fits phones with 144mm height (iPhone 11 Pro)
+- Phone with too small height may not cover full FOV. 
+- Required.
 * **:ok:[C2] Height: < 152mm**
-  - Phone with too much larger height makes it hard to symmetrically align the phones and HoloKit. 
-  - Each side has no more than 4mm extra is a good UX for alignment. 
+- Phone with too much larger height makes it hard to symmetrically align the phones and HoloKit. 
+- Each side has no more than 4mm extra is a good UX for alignment. 
 * **:-1:[C2-] Height: < 170mm**
-  - Usable. But bad UX for alignment. 
-  
+- Usable. But bad UX for alignment. 
+
 ### Thickness
 * **[C3] Thickness: > 7mm** 
-  - The small thickness may not secure the phones in the holder. 
-  - Required.
+- The small thickness may not secure the phones in the holder. 
+- Required.
 * **[C4] Thickness: < 9mm**
-  - The too much larger thickness of phones will break the holder of HoloKit. iPhone 11 Pro has an 8.1mm thickness.
-  - Required.
+- The too much larger thickness of phones will break the holder of HoloKit. iPhone 11 Pro has an 8.1mm thickness.
+- Required.
 
 ### Weight 
 * **:ok:[C5] Weight: < 200g**
-  - We don't want to put too much weight on the user's nose and head. Even 200g is hard to wear for more than 15 minutes. 
+- We don't want to put too much weight on the user's nose and head. Even 200g is hard to wear for more than 15 minutes. 
 * **:-1:[C5-] Weight: < 230g**
-  - Less strict weight limitation. 
+- Less strict weight limitation. 
 
 ## Image Quality  
 * **:ok:[C6] Display Density: > 420ppi**
-  - The viewing window size of HoloKit X per eye is 50mm (vertical). HoloKit X field of view (vertical) is 40 degrees. We want to achieve at least 20 PPD (pixel per degree). 
-  - 50mm / 25.4 (mm / inch) * 420 ppi / 40 = 20.66 ppd 
+- The viewing window size of HoloKit X per eye is 50mm (vertical). HoloKit X field of view (vertical) is 40 degrees. We want to achieve at least 20 PPD (pixel per degree). 
+- 50mm / 25.4 (mm / inch) * 420 ppi / 40 = 20.66 ppd 
 * **:-1:[C6-] Display Density: > 320ppi**
-  - Less Clear Imaging Quality. 
-  - 50mm / 25.4 (mm / inch) * 320 ppi / 40 = 15.7 ppd 
+- Less Clear Imaging Quality. 
+- 50mm / 25.4 (mm / inch) * 320 ppi / 40 = 15.7 ppd 
 * **:ok:[C7] Display Technology: OLED**
-  - Black is transparent in mixed reality. LCD Screen can not display a completely dark black.  
+- Black is transparent in mixed reality. LCD Screen can not display a completely dark black.  
 * **:-1:[C7-] Display Technology: LCD**
-  - Usable. Less transparency.
+- Usable. Less transparency.
 * **:ok:[C8] Display Refresh Rate: >=60Hz**
-  - Standard refresh rate.
-  - Required.
+- Standard refresh rate.
+- Required.
 * **:+1:[C8+] Display Refresh Rate: >=90Hz**
-  - Lower latency for the better user experience of hologram stability.
+- Lower latency for the better user experience of hologram stability.
 
 ## Sensor 
 * **[C9] With an ultrawide camera**
-  - Ultrawide camera (12mm equivalent focal length or around 120 diagonal FOV) makes hand tracking possible. 
+- Ultrawide camera (12mm equivalent focal length or around 120 diagonal FOV) makes hand tracking possible. 
 * **[C10] Time-of-Flight (ToF) Camera**
-  - It's necessary for environmental understanding (mesh generation). 
-  - It's better for AR plane finding, and fast calibration.
+- It's necessary for environmental understanding (mesh generation). 
+- It's better for AR plane finding, and fast calibration.
 
 ## AI Engine
 * **:+1:[C11+] AI Benchmark: DeeplabV3 100 FPS or above**
-  - Reasonable benchmark to achieve a 60FPS real-time hand tracking performance. 
-  - Hopefully, A14 can achieve this criterion.
+- Reasonable benchmark to achieve a 60FPS real-time hand tracking performance. 
+- Hopefully, A14 can achieve this criterion.
 
 * **:ok:[C11] AI Benchmark: DeeplabV3 50 FPS or above**
-  - Real-time hand-tracking requires strong neural network computing hardwares. 
-  - Only A13 or above / Snapdragon 865 or above can achieve this criterion. 
-  - Reference: Master Lu (AI Mark 3) [AI Benchmark](https://www.anandtech.com/show/15207/the-snapdragon-865-performance-preview-setting-the-stage-for-flagship-android-2020/4)
+- Real-time hand-tracking requires strong neural network computing hardwares. 
+- Only A13 or above / Snapdragon 865 or above can achieve this criterion. 
+- Reference: Master Lu (AI Mark 3) [AI Benchmark](https://www.anandtech.com/show/15207/the-snapdragon-865-performance-preview-setting-the-stage-for-flagship-android-2020/4)
 * **:-1:[C11-] No AI for Hand tracking**
-  - An external 3DOF or 6DOF controller is required for this criterion. 
- 
+- An external 3DOF or 6DOF controller is required for this criterion. 
+
 # Results
 
 ## iOS 
@@ -124,31 +125,30 @@ Remark:
 
 ## Tier 1. 
 Our product will primarily target for 
-* iPhone 13
+* iPhone 14 Pro
 * iPhone 13 Pro
-* iPhone 13
-* iPhone 13 Pro
-* iPhone 12
 * iPhone 12 Pro
-* iPhone 11
-* iPhone 11 Pro. 
+
+* iPhone 14 Pro Max
+* iPhone 13 Pro Max
+* iPhone 12 Pro Max
+
+Lidar sensor-enabled.
 
 NFC verification is preferred for these phones.
 
-## Tier 2. 
-Our SDK will be compatible with these phones but without primary support. 
+## Tier 2.
+Enough CPU but no LIDAR 
 
-* iPhone 11 Pro Max
-* iPhone 12 Pro Max
-* Samsung Galaxy S20
-* Samsung Galaxy S20+ 
-* Samsung Galaxy S20 Ultra
-* Samsung Galaxy S30
+* iPhone 14
+* iPhone 13
+* iPhone 12
 
 ## Tier 3.
-Controller support are required. 
+Weak CPU but works
 
 * iPhone X
-* iPhone XR
+* iPhone XS
 * iPhone XS Max
-
+* iPhone 11 Pro 
+* iPhone 11 Pro Max
